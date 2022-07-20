@@ -177,6 +177,16 @@ body {
 }
 
 /*Mobile menu styles*/
+.mobile-menu {
+  width: 480px;
+  height: 796px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+}
+
 .mobile-nav__link {
   display: block;
   padding-left: 40px;
@@ -186,6 +196,7 @@ body {
   line-height: 1.18;
   letter-spacing: 0.02em;
   text-decoration: none;
+  margin-bottom: 32px;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
