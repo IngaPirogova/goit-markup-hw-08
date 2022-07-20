@@ -6,6 +6,10 @@
     padding: 0;
     border: none;
     background-color: transparent;
+
+ @media screen and (max-widyh: 767px) {
+        display: none;
+    }
 }
 
 .menu-button__close {
@@ -24,15 +28,21 @@
 .menu-container {
     display: none;
      position: absolute;
+     top: 0;
      
+     max-width: 480px;
     width: 100vw;
     height: 100vw;   
     background: $accent-text-color;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
 
     &.is-open {
-            display: block;
+      display: block;
         }
+
+    @media screen and (max-widyh: 767px) {
+      display: none;
+                        }
     }
 
 

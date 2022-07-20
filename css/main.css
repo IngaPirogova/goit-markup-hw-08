@@ -99,6 +99,11 @@ body {
   border: none;
   background-color: transparent;
 }
+@media screen and (max-widyh: 767px) {
+  .menu-button {
+    display: none;
+  }
+}
 
 .menu-button__close {
   display: none;
@@ -115,6 +120,8 @@ body {
 .menu-container {
   display: none;
   position: absolute;
+  top: 0;
+  max-width: 480px;
   width: 100vw;
   height: 100vw;
   background: #ffffff;
@@ -123,6 +130,11 @@ body {
 }
 .menu-container.is-open {
   display: block;
+}
+@media screen and (max-widyh: 767px) {
+  .menu-container {
+    display: none;
+  }
 }
 
 .page-header__nav {
