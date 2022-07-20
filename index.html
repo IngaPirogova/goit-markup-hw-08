@@ -25,7 +25,7 @@
             <nav class="page-header__nav">
 
                 <a href="./" class="logo"><span class="logo__accent">Web</span>Studio</a>
-                <button type="button" class="menu-button is-open" aria-expanded="false" data-menu-button>
+                <button type="button" class="menu-button is-open" aria-expanded="false" aria-controls="menu-container" data-menu-button>
                     <svg class="menu-button__icon" width="40" height="40" aria-label="Переключатель мобильного меню">
                         <use class="menu-button__close" href="./images/icons.svg#icon-close"></use>
                         <use class="menu-button__menu" href="./images/icons.svg#icon-menu"></use>
@@ -33,7 +33,7 @@
                 </button>
                 </nav>
 
-                <div class="menu-container">
+                <div class="menu-container" id="menu-container" data-menu>
                 <ul class="site-nav">
                     <li class="site-nav__item site-nav__link">
                         <a href="./index.html" class="site-nav__link--current">Студия</a>
@@ -46,8 +46,17 @@
                 </ul>
                 
                 <ul class="header-links">
+             <li class="header-links__item">
+               <a href="tel:+380991111111" class="header-links__link--currentcolor">
+                 <svg class="header-links__icon" width="10" height="16">
+                      <use href="./images/icons.svg.svg#icon-smartphone"></use>
+                  </svg>
+                     +38 099 111 11 11
+                 </a>
+                    </li>
+
                     <li class="header-links__item">
-                        <a href="mailto:info@devstudio.com" class="header-links__link">
+                        <a href="mailto:info@devstudio.com" class="header-links__link--color">
                             <svg class="header-links__icon" width="16px" height="12px">
                                 <use href="./images/icons.svg.svg#icon-envelope"></use>
                             </svg>
@@ -55,13 +64,24 @@
                         </a>
                     </li>
                 
-                    <li class="header-links__item">
-                        <a href="tel:+380991111111" class="header-links__link">
-                            <svg class="header-links__icon" width="10" height="16">
-                                <use href="./images/icons.svg.svg#icon-smartphone"></use>
-                            </svg>
-                            +38 099 111 11 11
-                        </a>
+                    
+                </ul>
+
+                <ul class="mobile-soclinks">
+                    <li class="mobile-soclinks__item">
+                        <a href="" class="mobile-soclinks__link">Instagram</a>
+                    </li>
+                
+                    <li class="mobile-soclinks__item">
+                        <a href="" class="mobile-soclinks__link">Twitter</a>
+                    </li>
+                
+                    <li class="mobile-soclinks__item">
+                        <a href="" class="mobile-soclinks__link">Facebook</a>
+                    </li>
+                
+                    <li class="mobile-soclinks__item">
+                        <a href="" class="mobile-soclinks__link">LinkedIn</a>
                     </li>
                 </ul>
                 </div>         
