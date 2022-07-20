@@ -1,5 +1,4 @@
 /*Mobile menu styles*/
-
 .menu-button {
     display: inline-flex;
     margin: 0;
@@ -22,6 +21,13 @@
 
 .menu-button.is-open .menu-button__menu {
     display: none;
+}
+
+.menu-button__icon {
+    margin-left: 276px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 
@@ -50,9 +56,8 @@
 
 .page-header__nav {
      display: flex;
-     align-items: center;
-     justify-content: space-between;    
-     
+
+             
 }
 
 .site-nav {

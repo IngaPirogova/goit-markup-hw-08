@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .mobile-soclinks, .header-links, .site-nav__item, .site-nav__link {
   list-style: none;
   margin: 0;
@@ -235,51 +234,4 @@ body {
 .mobile-soclinks__item:nth-child(4) {
   border-right: none;
   padding-right: 0;
-}
-
-.hero {
-  background-color: #2F303A;
-  text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
-
-.hero__title {
-  margin-bottom: 30px;
-  max-width: 696px;
-  color: #ffffff;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-
-/*Фон Герой*/
-.overlay {
-  max-width: 1600px;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/gradientp.png);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/gradientp.png);
-}
-
-.hero__button {
-  display: inline-block;
-  padding: 10px 32px;
-  color: #ffffff;
-  background-color: #2196F3;
-  border-color: #2196F3;
-  border-radius: 4px;
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-}
-.hero__button:hover, .hero__button:focus {
-  color: #ffffff;
-  background-color: #2196F3;
-  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */
