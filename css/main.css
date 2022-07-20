@@ -1,10 +1,10 @@
-.mobile-soclinks, .site-nav__item, .header-links, .site-nav__link {
+.mobile-soclinks, .header-links, .site-nav__item, .site-nav__link {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.mobile-soclinks__link, .site-nav__item, .header-links__link--currentcolor, .header-links__link--color, .site-nav__link, .site-nav__link--current, .logo {
+.mobile-soclinks__link, .header-links__link--currentcolor, .header-links__link--color, .site-nav__item, .site-nav__link, .site-nav__link--current, .logo {
   text-decoration: none;
   font-style: normal;
   margin: 0;
@@ -124,6 +124,8 @@ body {
   max-width: 480px;
   width: 100vw;
   height: 100vw;
+  padding-top: 48px;
+  padding-left: 40px;
   background: #ffffff;
   -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
@@ -168,6 +170,9 @@ body {
   color: #2196F3;
 }
 
+.header-links {
+  margin-top: 302px;
+}
 .header-links__item {
   margin-bottom: 32px;
 }
