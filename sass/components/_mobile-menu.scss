@@ -1,16 +1,30 @@
 /*Mobile menu styles*/
+
 .menu-button {
     display: inline-flex;
     margin: 0;
     padding: 0;
     border: none;
     background-color: transparent;
+    cursor: pointer;
 
+    &:focus .menu-button__icon {
+        fill: $accent-color;
+        cursor: pointer;
+    }
+
+        &:hover .menu-button__icon {
+            fill: $accent-color;
+            cursor: pointer;
+        }
+                 
  @media screen and (max-widyh: 767px) {
         display: none;
     }
+   
 }
 
+ 
 .menu-button__close {
     display: none;
 }
@@ -29,6 +43,7 @@
   margin-right: 10px;
   margin-bottom: 10px;
 }
+
 
 
 .menu-container {
