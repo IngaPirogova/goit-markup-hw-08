@@ -48,12 +48,17 @@
     }
     }
 
-   .page-header__nav {
+.page-header__nav {
      display: flex;
      align-items: center;
-     justify-content: space-between;        
-    }
+     justify-content: space-between;    
+     
+}
 
+.site-nav {
+    padding-inline-start: 0;
+}
+    
 .site-nav__link {
     display: block;   
     
