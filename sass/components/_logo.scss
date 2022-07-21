@@ -1,22 +1,31 @@
 .logo {
     display: flex;
     align-items: center;
-    margin-top: 16px;
-    margin-bottom: 16px;
-    margin-left: 15px;
-
+    padding-top: 16px;
+    padding-bottom: 16px;
     color: $primary-text-color;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
+    font-size: 24px;
+    line-height: 1.17;
+   @extend %a;
+
+
+@media screen and (min-width: 768px) {
+        padding-top: 24px;
+        padding-bottom: 25px;
+    }
+
+@media screen and (min-width: 1200px) {
     font-size: 26px;
     line-height: 1.19;
-    @extend %a;
+    }
 }
 
 .footer__logo {
-    color: $accent-text-color;
+    color: $accent-text-color; 
     padding-bottom: 0;
-
+    
 }
 
 .logo__accent {
