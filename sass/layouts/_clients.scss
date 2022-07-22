@@ -1,23 +1,31 @@
 /*Постоянные клиенты*/
 .clients__title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
+    font-size: 28px;
+    line-height: 1.18;
+    
     text-align: center;
     color: $primary-text-color;
     @extend %removeMargin;
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+        font-size: 36px;
+        line-height: 1.17;
+}
 }
 
 .clients__list {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     @extend %ul;
 }
 
 .clients__link {
     display: flex;
-    width: 170px;
+    width: 210px;
     height: 92px;
     border-radius: 4px;
     border: 1px solid $social-links-color;
@@ -32,12 +40,33 @@
         color: $accent-color;
         border-color: $accent-color;
     }
+
+        @media screen and (min-width: 768px) {
+            width: 226px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            width: 170px;
+        }
 }
 
 .clients__icon {
     fill: currentColor;
 }
 
-.clients-item:not(:last-child) {
+
+.clients-item {
+
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 1 * 30px) / 2);
+}
+    
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 3 * 30px) / 4);
+}
+
+&:not(:last-child) {
     margin-right: 30px;
 }
+}
+
