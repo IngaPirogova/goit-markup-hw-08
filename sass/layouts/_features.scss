@@ -1,9 +1,25 @@
 .feature__list {
-   display: flex;
-    gap: 30px;
-    list-style: none;
-}
+    @extend %ul;
 
+ @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}  
+}      
+.feature__item {
+
+&:not(:last-child) {
+    margin-bottom: 30px;}
+    
+ @media screen and (min-width: 768px) {
+    width: calc((100% - 1 * 30px) / 2);          
+}
+ @media screen and (min-width: 1200px) {
+    width: calc((100% - 3 * 30px) / 4);
+}
+}
+  
 .feature__subtitle {
     margin-bottom: 10px;
     font-weight: 700;
@@ -11,21 +27,26 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: $primary-text-color;
+    color: $primary-text-color;    
     @extend %removeMargin;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+        text-align: start;
+}
 }
 
-
 .feature__icon {
-    min-height: 120px;
-    border-radius: 4px;
-    margin-bottom: 30px;
-    background-color: $secondary-bg-color;
-    @extend %centeredFlex;
+  min-height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  background-color: $secondary-bg-color;
+@extend %centeredFlex;
 }
 
 .feature__text {
-    line-height: 1.71;
-    color: $secondary-text-color;
-    @extend %removeMargin;
+   line-height: 1.71;
+   color: $secondary-text-color;
+   @extend %removeMargin;   
 }
+

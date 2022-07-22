@@ -13,20 +13,20 @@
   overflow: hidden;
 }
 
-.footer-contacts__list, .team__list, .clients__list, .site-nav, .example__list, .header-links, .mobile-menu-soclinks, .mobile-menu-links, .mobile-menu-nav, .mobile-menu, .products-section__list, .soclinks-list, .filter {
+.footer-contacts__list, .team__list, .clients__list, .site-nav, .example__list, .feature__list, .header-links, .mobile-menu-soclinks, .mobile-menu-links, .mobile-menu-nav, .products-section__list, .soclinks-list, .filter {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.footer-contacts__adress, .footer-contacts__link, .footer-contacts__list, .header-links__link, .mobile-menu-soclinks__link, .mobile-menu-links__link--currentcolor, .mobile-menu-links__link--color, .mobile-menu-nav__link--current, .mobile-menu-nav__link, .mobile-menu, .products-section__description, .logo {
+.footer-contacts__adress, .footer-contacts__link, .footer-contacts__list, .header-links__link, .mobile-menu-soclinks__link, .mobile-menu-links__link--currentcolor, .mobile-menu-links__link--color, .mobile-menu-nav__link--current, .mobile-menu-nav__link, .products-section__description, .logo {
   text-decoration: none;
   font-style: normal;
   margin: 0;
   padding: 0;
 }
 
-.team__text, .team__subtitle, .team__title, .clients__title, .example__text, .example__title, .feature__text, .feature__subtitle, .modal__feedtext {
+.team__text, .team__subtitle, .team__title, .clients__title, .example__text, .example__title, .hero__title, .feature__text, .feature__subtitle, .modal__feedtext {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -81,8 +81,14 @@ body {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .logo {
@@ -616,8 +622,8 @@ body {
   border: none;
   width: 40px;
   height: 40px;
-  z-index: 1000;
   margin-left: auto;
+  z-index: 1000;
 }
 @media screen and (min-width: 768px) {
   .menu-button {
@@ -625,28 +631,12 @@ body {
   }
 }
 
-.menu-button__close {
-  display: none;
-}
-
-.menu-button.is-open .menu-button__close {
-  display: block;
-}
-
-.menu-button.is-open .menu-button__menu {
-  display: none;
-}
-
-.page-header {
-  z-index: 10;
-}
-
 .mobile-menu {
-  display: none;
-  position: absolute;
-  z-index: 100;
+  position: fixed;
   top: 0;
   left: 0;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
   width: 100%;
   height: 100%;
   padding: 48px 40px;
@@ -658,14 +648,24 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #ffffff;
+  z-index: 100;
+  -webkit-transition: -webkit-transform 500ms;
+  transition: -webkit-transform 500ms;
+  transition: transform 500ms;
+  transition: transform 500ms, -webkit-transform 500ms;
 }
 .mobile-menu.is-open {
-  display: block;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
 }
 
 .mobile-menu-nav {
   margin-bottom: auto;
-  position: relative;
 }
 
 .mobile-menu-nav__link {
@@ -741,6 +741,22 @@ body {
   padding-right: 0;
 }
 
+.menu-button .menu-button__close {
+  opacity: 0;
+}
+
+.menu-button.is-open .menu-button__close {
+  opacity: 1;
+}
+
+.menu-button.is-open .menu-button__menu {
+  opacity: 0;
+}
+
+.page-header {
+  z-index: 10;
+}
+
 .page-header__nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -804,12 +820,29 @@ body {
   }
 }
 
-.feature__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 30px;
-  list-style: none;
+@media screen and (min-width: 768px) {
+  .feature__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
+.feature__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .feature__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .feature__item {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .feature__subtitle {
@@ -820,6 +853,12 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .feature__subtitle {
+    text-align: start;
+  }
 }
 
 .feature__icon {
@@ -837,29 +876,34 @@ body {
 .hero {
   background-color: #2F303A;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .hero__title {
-  margin-bottom: 30px;
-  max-width: 696px;
-  color: #ffffff;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-
-/*Фон Герой*/
-.overlay {
-  max-width: 1600px;
-  height: 600px;
+  max-width: 360px;
   margin-left: auto;
   margin-right: auto;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/gradientp.png);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/gradientp.png);
+  color: #ffffff;
+  font-size: 26px;
+  line-height: 1.62;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero__button {
@@ -874,11 +918,24 @@ body {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .hero__button:hover, .hero__button:focus {
   color: #ffffff;
   background-color: #2196F3;
   cursor: pointer;
+}
+
+@media screen and (min-width: 1200px) {
+  .overlay {
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/gradientp.png);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/gradientp.png);
+  }
 }
 
 .example {

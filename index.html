@@ -19,37 +19,31 @@
 <body>
     <!--Шапка сайта-->
     <header class="page-header">
-        <div class="page-header__wrapper container">
-            
+        <div class="page-header__wrapper container">            
         <nav class="page-header__nav">
-
+        
             <a href="./" class="logo" aria-label="Логотип WebStudio"><span class="logo__accent">Web</span>Studio</a>
  
-            <button type="button" 
-            class="menu-button is-open" 
-            aria-expanded="false" 
-            aria-controls="mobile-menu" 
-            data-menu-button>
-                <svg class="menu-button__icon" width="40" height="40" aria-label="переключатель">
+            <button class="menu-button is-open" type="button" data-menu-button aria-expanded="true">
+                <svg class="menu-button__icon" width="40" height="40" aria-label="Переключатель меню">
                     <use class="menu-button__menu" href="./images/icons.svg#icon-menu"></use>
                     <use class="menu-button__close" href="./images/icons.svg#icon-close"></use>
-                    
-                    
+                                
                 </svg>
             </button>
-
+        </nav>
+             
             <!--Мобильное меню-->
-            
-            <div class="mobile-menu" id="mobile-menu" data-menu>
+             <div class="mobile-menu is-open" data-menu>
+
                 <ul class="mobile-menu-nav">
                     <li class="mobile-menu-nav__item mobile-menu-nav__link">
                         <a href="./index.html" class="mobile-menu-nav__link--current">Студия</a>
                     </li>
             
-                    <li class="mobile-menuv-nav__item"><a href="./portfolio.html" class="mobile-menu-nav__link">Портфолио</a></li>
+                    <li class="mobile-menu-nav__item"><a href="./portfolio.html" class="mobile-menu-nav__link">Портфолио</a></li>
             
                     <li class="mobile-menu-nav__item"><a href="" class="mobile-menu-nav__link">Контакты</a></li>
-            
                 </ul>
             
                 <ul class="mobile-menu-links">
@@ -85,7 +79,7 @@
                 </ul>
             </div>
 
-
+            <!--Навигация хэдера-->
             
             <ul class="site-nav">
                     <li class="site-nav__item site-nav__link">
@@ -95,9 +89,8 @@
                     <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
 
                     <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
-
                 </ul>
-            </nav>
+           
             <ul class="header-links">
                 <li class="header-links__item">
                     <a href="mailto:info@devstudio.com" class="header-links__link">
@@ -117,13 +110,13 @@
                     </a>
                 </li>
             </ul>
-        </div>
+         </div> 
     </header>
 
     <main>
         <!--Герой-->
         <section class="hero overlay">
-            <h1 class="hero__title container">Эффективные решения для вашего бизнеса</h1>
+            <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
             <button class="hero__button" type="button" data-modal-open>Заказать услугу</button>
         </section>
 
