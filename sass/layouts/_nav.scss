@@ -6,58 +6,59 @@
 
 @media screen and (min-width: 768px) {    
     display: flex;}
-    
-    @extend %ul;
+        @extend %ul;
+}
+
+.site-nav__item {
+  
+ margin-right: 50px;
+ 
+  &:last-child {
+  margin-right: 0;  }
 }
 
 
-//.site-nav__item {
-//  
-//  margin-right: 50px;
- // position: relative;
-  //@extend %a;
 
- // &:last-child {
- // margin-right: 0;  }
+.site-nav__link {
+  @media screen and (min-width: 768px) {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
+  color: $primary-text-color;
 
-
-//.site-nav__link {
-//  @media screen and (min-width: 768px) {
- //   display: block;
- //   padding-top: 32px;
- // padding-bottom: 32px;
-
-    //color: $primary-text-color;
-
-    //font-weight: 500;
-    //line-height: 1.14;
-    //letter-spacing: 0.02em;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;    
+}
   
 
-    //.site-nav__link--current {
-     // color: $accent-color;
-     // @extend %a;
+    .site-nav__link--current {
+      color: $accent-color;
+      @extend %a;
 
-    //transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-   // &:hover,
-   // &:focus {
-     //  color: $accent-color;    }
+    &:hover,
+    &:focus {
+       color: $accent-color;    }
 
-   // &--current {
-        //color: $accent-color;    }
+    &--current {
+        color: $accent-color;    }
 
-    //&--current::after {
-    //  position: absolute;
-    //  display: block;
-     //  content: '';
-     // bottom: -1px;
-    //  left: 0;
-      //  height: 4px;
-    //   width: 100%;
-    //    background-color: $accent-color;
-    //  border-radius: 2px;    }
+    &--current::after {
+      position: absolute;
+      display: block;
+       content: '';
+      bottom: -1px;
+      left: 0;
+        height: 4px;
+       width: 100%;
+        background-color: $accent-color;
+      border-radius: 2px;    }
 
-   // &--current {
-      //  @extend %a;    }
+    &--current {
+        @extend %a;    }
+    }
+  }
