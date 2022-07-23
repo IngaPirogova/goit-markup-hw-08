@@ -1003,28 +1003,6 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .site-nav__item {
-    margin-right: 50px;
-    position: relative;
-  }
-  .site-nav__item:last-child {
-    margin-right: 0;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .site-nav__link {
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    color: #212121;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-  }
-}
-
 /*Постоянные клиенты*/
 .clients__title {
   margin-bottom: 30px;
