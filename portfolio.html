@@ -21,41 +21,101 @@
     <header class="page-header">
         <div class="page-header__wrapper container">
             <nav class="page-header__nav">
-
-                <a href="./" class="logo"><span class="logo__accent">Web</span>Studio</a>
-
+    
+                <a href="./" class="logo" aria-label="Логотип WebStudio"><span class="logo__accent">Web</span>Studio</a>
+    
+    
+                <!--Навигация хэдера-->
+    
                 <ul class="site-nav">
                     <li class="site-nav__item">
                         <a href="./index.html" class="site-nav__link">Студия</a>
                     </li>
-
-                    <li class="site-nav__item site-nav__link"><a href="./portfolio.html"
-                            class="site-nav__link--current">Портфолио</a></li>
-
+    
+                    <li class="site-nav__item site-nav__link"><a href="./portfolio.html" class="site-nav__link--current">Портфолио</a></li>
+    
                     <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
-
                 </ul>
+    
+                <ul class="header-links">
+                    <li class="header-links__item">
+                        <a href="mailto:info@devstudio.com" class="header-links__link">
+                            <svg class="header-links__icon" width="16px" height="12px">
+                                <use href="./images/icons.svg.svg#icon-envelope"></use>
+                            </svg>
+                            info@devstudio.com
+                        </a>
+                    </li>
+    
+                    <li class="header-links__item">
+                        <a href="tel:+380991111111" class="header-links__link">
+                            <svg class="header-links__icon" width="10" height="16">
+                                <use href="./images/icons.svg.svg#icon-smartphone"></use>
+                            </svg>
+                            +38 099 111 11 11
+                        </a>
+                    </li>
+                </ul> 
+    
+    
+                <button class="menu-button is-open" type="button" data-menu-button aria-expanded="true">
+                    <svg class="menu-button__icon" width="40" height="40" aria-label="Переключатель меню">
+                        <use class="menu-button__menu" href="./images/icons.svg#icon-menu"></use>
+                        <use class="menu-button__close" href="./images/icons.svg#icon-close"></use>
+    
+                    </svg>
+                </button>
             </nav>
-            <ul class="header-links">
-                <li class="header-links__item">
-                    <a href="mailto:info@devstudio.com" class="header-links__link">
-                        <svg class="header-links__icon" width="16px" height="12px">
-                            <use href="./images/icons.svg.svg#icon-envelope"></use>
-                        </svg>
-                        info@devstudio.com
-                    </a>
-                </li>
-
-                <li class="header-links__item">
-                    <a href="tel:+380991111111" class="header-links__link">
-                        <svg class="header-links__icon" width="10" height="16">
-                            <use href="./images/icons.svg.svg#icon-smartphone"></use>
-                        </svg>
-                        +38 099 111 11 11
-                    </a>
-                </li>
-            </ul>
-        </div>
+    
+            <!--Мобильное меню-->
+            <div class="mobile-menu is-open" data-menu>
+    
+                <ul class="mobile-menu-nav">
+                    <li class="mobile-menu-nav__item mobile-menu-nav__link">
+                        <a href="./index.html" class="mobile-menu-nav__link--current">Студия</a>
+                    </li>
+    
+                    <li class="mobile-menu-nav__item"><a href="./portfolio.html" class="mobile-menu-nav__link">Портфолио</a>
+                    </li>
+    
+                    <li class="mobile-menu-nav__item"><a href="" class="mobile-menu-nav__link">Контакты</a></li>
+                </ul>
+    
+                <ul class="mobile-menu-links">
+                    <li class="mobile-menu-links__item">
+                        <a href="tel:+380991111111" class="mobile-menu-links__link--currentcolor">
+                            +38 099 111 11 11
+                        </a>
+                    </li>
+    
+                    <li class="mobile-menu-links__item">
+                        <a href="mailto:info@devstudio.com" class="mobile-menu-links__link--color">
+                            info@devstudio.com
+                        </a>
+                    </li>
+                </ul>
+    
+                <ul class="mobile-menu-soclinks">
+                    <li class="mobile-menu-soclinks__item">
+                        <a href="" class="mobile-menu-soclinks__link">Instagram</a>
+                    </li>
+    
+                    <li class="mobile-menu-soclinks__item">
+                        <a href="" class="mobile-menu-soclinks__link">Twitter</a>
+                    </li>
+    
+                    <li class="mobile-menu-soclinks__item">
+                        <a href="" class="mobile-menu-soclinks__link">Facebook</a>
+                    </li>
+    
+                    <li class="mobile-menu-soclinks__item">
+                        <a href="" class="mobile-menu-soclinks__link">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+    
+    
+    
     </header>
 
     <main>
@@ -97,7 +157,7 @@
                         <div class="products-section__wrapper">
                             <a href="" class="products-section__link">
                                 <img class="products-section__img" src="./images/novsgs.jpg"
-                                    alt="Постер New Orlean vs Golden Star" width="370"></a>
+                                    alt="Постер New Orlean vs Golden Star" width=""></a>
                                 <div class="products-section__overlay">
                                     <p class="products-section__text">Ресурс предлагает комплексные предложения с разным
                                         уровнем функционала и
@@ -116,7 +176,7 @@
                         <div class="products-section__wrapper">
                             <a href="" class="products-section__link">
                                 <img class="products-section__img" src="./images/seafood.jpg" alt="Ресторан Seafood"
-                                    width="370"></a>
+                                    width=""></a>
                                 <div class="products-section__overlay">
                                     <p class="products-section__text">Ресурс предлагает комплексные предложения с разным
                                         уровнем функционала и
@@ -135,7 +195,7 @@
                         <div class="products-section__wrapper">
                             <a href="" class="products-section__link">
                                 <img class="products-section__img" src="./images/prime.jpg" alt="Проект Prime"
-                                    width="370"></a>
+                                    width=""></a>
                                 <div class="products-section__overlay">
                                     <p class="products-section__text">Ресурс предлагает комплексные предложения с разным
                                         уровнем функционала и
@@ -154,7 +214,7 @@
                         <div class="products-section__wrapper">
                             <a href="" class="products-section__link">
                                 <img class="products-section__img" src="./images/boxes.jpg" alt="Проект Boxes"
-                                    width="370"></a>
+                                    width=""></a>
                                 <div class="products-section__overlay">
                                     <p class="products-section__text">Ресурс предлагает комплексные предложения с разным
                                         уровнем функционала и
@@ -173,7 +233,7 @@
                         <div class="products-section__wrapper">
                             <a href="" class="products-section__link">
                                 <img class="products-section__img" src="./images/inspiration.jpg"
-                                    alt="Inspiration has no Borders" width="370"></a>
+                                    alt="Inspiration has no Borders" width=""></a>
                                 <div class="products-section__overlay">
                                     <p class="products-section__text">Ресурс предлагает комплексные предложения с разным
                                         уровнем функционала и
@@ -192,7 +252,7 @@
                         <div class="products-section__wrapper">
                             <a href="" class="products-section__link">
                                 <img class="products-section__img" src="./images/limed.jpg"
-                                    alt="Издание Limited Edition" width="370"></a>
+                                    alt="Издание Limited Edition" width=""></a>
                                 <div class="products-section__overlay">
                                     <p class="products-section__text">Ресурс предлагает комплексные предложения с разным
                                         уровнем функционала и
@@ -210,7 +270,7 @@
                     <li class="products-section__card">
                         <div class="products-section__wrapper">
                             <a href="" class="products-section__link">
-                                <img class="products-section__img" src="./images/lab.jpg" alt="Проект LAB" width="370"></a>
+                                <img class="products-section__img" src="./images/lab.jpg" alt="Проект LAB" width=""></a>
                                 <div class="products-section__overlay">
                                     <p class="products-section__text">Ресурс предлагает комплексные предложения с разным
                                         уровнем функционала и
@@ -229,7 +289,7 @@
                         <div class="products-section__wrapper">
                             <a href="" class="products-section__link">
                                 <img class="products-section__img" src="./images/growing.jpg" alt="Growing Business"
-                                    width="370"></a>
+                                    width=""></a>
                                 <div class="products-section__overlay">
                                     <p class="products-section__text">Ресурс предлагает комплексные предложения с разным
                                         уровнем функционала и
@@ -250,54 +310,57 @@
     <!--Футер-->
     <footer class="footer">
         <div class="footer__wrapper container">
-
-            <div class="footer-contacts">
-                <a href="./" class="logo footer__logo"><span class="logo__accent">Web</span>Studio</a>
-                <address>
-                    <ul class="footer-contacts__list">
-                        <li><a class="footer-contacts__adress" href="">г. Киев, пр-т Леси Украинки, 26</a></li>
-                        <li><a class="footer-contacts__link" href="mailto:info@example.com">info@example.com</a></li>
-                        <li><a class="footer-contacts__link" href="tel:+380991111111">+38 099 111 11 11</a></li>
+            <div class="footer__div">
+    
+                <div class="footer-contacts">
+                    <a href="./" class="logo footer__logo"><span class="logo__accent">Web</span>Studio</a>
+                    <address>
+                        <ul class="footer-contacts__list">
+                            <li><a class="footer-contacts__adress" href="">г. Киев, пр-т Леси Украинки, 26</a></li>
+                            <li><a class="footer-contacts__link" href="mailto:info@example.com">info@example.com</a></li>
+                            <li><a class="footer-contacts__link" href="tel:+380991111111">+38 099 111 11 11</a></li>
+                        </ul>
+                    </address>
+                </div>
+    
+                <!--Футер ссылки соцсетей-->
+                <div class="join">
+                    <p class="join__title">присоединяйтесь</p>
+    
+                    <ul class="soclinks-list">
+                        <li class="soclinks-list__item">
+                            <a href="" class="soclinks-list__link soclinks-list__link--invers">
+                                <svg class="soclinks-list__icon" width="20px" height="20px">
+                                    <use href="./images/icons.svg.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="soclinks-list__item">
+                            <a href="" class="soclinks-list__link soclinks-list__link--invers">
+                                <svg class="soclinks-list__icon" width="20px" height="20px">
+                                    <use href="./images/icons.svg.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="soclinks-list__item">
+                            <a href="" class="soclinks-list__link soclinks-list__link--invers">
+                                <svg class="soclinks-list__icon" width="20px" height="20px">
+                                    <use href="./images/icons.svg.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="soclinks-list__item">
+                            <a href="" class="soclinks-list__link soclinks-list__link--invers">
+                                <svg class="soclinks-list__icon" width="20px" height="20px">
+                                    <use href="./images/icons.svg.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
                     </ul>
-                </address>
+                </div>
             </div>
-
-            <!--Футер ссылки соцсетей-->
-            <div class="join">
-                <p class="join__title">присоединяйтесь</p>
-
-                <ul class="soclinks-list">
-                    <li class="soclinks-list__item">
-                        <a href="" class="soclinks-list__link soclinks-list__link--invers">
-                            <svg class="soclinks-list__icon" width="20px" height="20px">
-                                <use href="./images/icons.svg.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="soclinks-list__item">
-                        <a href="" class="soclinks-list__link soclinks-list__link--invers">
-                            <svg class="soclinks-list__icon" width="20px" height="20px">
-                                <use href="./images/icons.svg.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="soclinks-list__item">
-                        <a href="" class="soclinks-list__link soclinks-list__link--invers">
-                            <svg class="soclinks-list__icon" width="20px" height="20px">
-                                <use href="./images/icons.svg.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="soclinks-list__item">
-                        <a href="" class="soclinks-list__link soclinks-list__link--invers">
-                            <svg class="soclinks-list__icon" width="20px" height="20px">
-                                <use href="./images/icons.svg.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
+    
+    
             <div class="subscribe-form">
                 <p class="subscribe-form__text">Подпишитесь на рассылку</p>
                 <form class="subscribe-form__field" autocomplete="off" novalidate>
@@ -311,9 +374,10 @@
                     </button>
                 </form>
             </div>
-
+    
         </div>
     </footer>
+<script src="./js/menu.js"></script>
 </body>
 
 </html>
