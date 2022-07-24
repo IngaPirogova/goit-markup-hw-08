@@ -4,6 +4,9 @@
     @media screen and (min-width: 768px) {
     margin-top: 60px;
 }
+   @media screen and (min-width: 1200px) {
+    margin-left: auto;
+}
 }
 
 .subscribe-form__field {
@@ -11,7 +14,9 @@
     flex-direction: column;
     @extend %centeredFlex;
 
-
+@media screen and (min-width: 1200px) {
+    flex-direction: row;
+}
 }
 
 .subscribe-form__text {
@@ -23,6 +28,10 @@
     color: $accent-text-color;
     text-align: center;
     @extend %removeMargin;
+
+    @media screen and (min-width: 1200px) {
+        text-align: start;
+    }
 }
 
 .subscribe-form__lable {
@@ -90,8 +99,9 @@
 
     @media screen and (min-width: 1200px) {
         margin-left: 12px;
+        margin-top: 0;}
 }
-}
+
 
 .subscribe-form__send {
     margin-left: 10px;
