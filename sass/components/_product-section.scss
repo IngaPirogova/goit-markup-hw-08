@@ -27,6 +27,11 @@
 
 
 .products-section__card {
+    
+&:hover .products-section__overlay {
+        transform: translateY(0);
+    }
+
    @media screen and (min-width: 768px) {
     width: calc((100% - 30px) / 2);
     
