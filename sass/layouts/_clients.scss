@@ -25,8 +25,8 @@
 
 .clients__link {
     display: flex;
-    width: 210px;
-    height: 92px;
+    min-width: 210px;
+    min-height: 92px;
     border-radius: 4px;
     border: 1px solid $social-links-color;
     align-items: center;
@@ -42,11 +42,11 @@
     }
 
         @media screen and (min-width: 768px) {
-            width: 226px;
+            min-width: 226px;
         }
     
         @media screen and (min-width: 1200px) {
-            width: 170px;
+           min-width: 170px;
         }
 }
 

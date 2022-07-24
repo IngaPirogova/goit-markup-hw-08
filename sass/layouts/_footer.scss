@@ -4,10 +4,9 @@
     padding-bottom: 60px;
 }
 
-.footer__wrapper {
-    display: flex;
-    align-items: baseline;
-}
+//.footer__wrapper {
+ //   display: flex;
+//    align-items: baseline;}
 
 .footer-contacts__list {
     display: block;
@@ -20,14 +19,19 @@
 
 .footer-contacts__link {
     display: block;
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.6);   
+    
+    @extend %a;
+
+ @media screen and (min-width: 1200px) {
+
     line-height: 1.71;
     margin-top: 9px;
+
     &:hover,
     &:focus {
-        color: $accent-color;
+        color: $accent-color;}
     }
-    @extend %a;
 }
 
 .footer-contacts__adress {
