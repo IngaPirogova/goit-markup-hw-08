@@ -68,7 +68,7 @@
     @media (min-device-pixel-ratio: 2),
            (min-resolution: 192dpi),
            (min-resolution: 2dppx) {
-                        background-image: url(/images/hero@2x_sm.jpg);   }
+                        background-image: url(../images/hero@2x_sm.jpg);   }
 
 
     @media screen and (max-width: 480px) {
@@ -80,7 +80,7 @@
            (min-resolution: 192dpi),
            (min-resolution: 2dppx) {
                         
-            background-image: url(/images/hero@2x_sm.jpg);}       
+            background-image: url(../images/hero@2x_sm.jpg);}       
     }
 
     @media screen and (min-width: 768px) {
@@ -91,7 +91,7 @@
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
                             
-        background-image: url(/images/hero@2x_md.jpg);}      
+        background-image: url(../images/hero@2x_md.jpg);}      
     }
 
     @media screen and (min-width: 1200px) {
@@ -103,6 +103,6 @@
            (min-resolution: 192dpi),
            (min-resolution: 2dppx) {
             
-        background-image: url(/images/hero@2x_lg.jpg);}            
+        background-image: url(../images/hero@2x_lg.jpg);}            
 }              
 }
