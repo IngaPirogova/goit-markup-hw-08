@@ -1475,7 +1475,6 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .join {
-    margin-left: 70px;
     margin-right: 93px;
     margin-top: 0;
     margin-bottom: 0;
@@ -1505,5 +1504,13 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
     gap: 165px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 70px;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -69,10 +69,10 @@
    
 
     @media screen and (min-width: 1200px) {
-    margin-left: 70px;
+    //margin-left: 70px;
     margin-right: 93px;
     margin-top: 0;
-    margin-bottom: 0;
+   margin-bottom: 0;
 }
 }
 
@@ -95,5 +95,10 @@
     display: flex;
     justify-content: center;
     gap: 165px;   
+}
+
+@media screen and (min-width: 1200px) {
+    display: flex;
+    gap: 70px;
 }
 }
