@@ -1523,5 +1523,8 @@ body {
     display: -ms-flexbox;
     display: flex;
     gap: 70px;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }/*# sourceMappingURL=main.css.map */
