@@ -746,7 +746,7 @@ body {
 
 .menu-button {
   background-color: transparent;
-  fill: #212121;
+  color: #212121;
   border: none;
   width: 40px;
   height: 40px;
@@ -757,6 +757,13 @@ body {
   .menu-button {
     display: none;
   }
+}
+.menu-button:focus, .menu-button:hover {
+  color: #2196F3;
+}
+
+.menu-button__icon {
+  fill: currentColor;
 }
 
 .mobile-menu {
