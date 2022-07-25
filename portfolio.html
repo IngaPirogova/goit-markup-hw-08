@@ -173,8 +173,34 @@
                     <li class="products-section__card">
                         <div class="products-section__wrapper">
                             <a href="" class="products-section__link">
-                                <img class="products-section__img" src="./images/novsgs.jpg"
-                                    alt="Постер New Orlean vs Golden Star" width=""></a>
+                                <picture>
+                                    <!-- desktop screen -->
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio_picture/new_lg.webp 1x, ./images/portfolio_picture/new@2x_lg.webp 2x"
+                                        type="image/webp" />
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio_picture/new_lg.jpg 1x, ./images/portfolio_picture/new@2x_lg.jpg 2x"
+                                        type="image/jpg" />
+                                    <!-- tablet screen -->
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio_picture/new_md.webp 1x, ./images/portfolio_picture/new@2x_md.webp 2x"
+                                        type="image/webp" />
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio_picture/new_md.jpg 1x, ./images/portfolio_picture/new@2x_md.jpg 2x"
+                                        type="image/jpg" />
+                                    <!-- mobile screen -->
+                                    <source media="(max-width: 768px)"
+                                        srcset="./images/portfolio_picture/new_sm.webp 1x, ./images/portfolio_picture/new@2x_sm.webp 2x"
+                                        type="image/webp" />
+                                    <source media="(max-width: 768px)"
+                                        srcset="./images/portfolio_picture/new_sm.jpg 1x, ./images/portfolio_picture/new@2x_sm.jpg 2x"
+                                        type="image/jpg" />
+                                
+                                    <img class="products-section__img" src="./images/portfolio_picture/new_sm.jpg " alt="Постер New Orlean vs Golden Star" width="450"
+                                        height="294">
+                                </picture>                                                         
+                                                                
+                                </a>
                                 <div class="products-section__overlay">
                                     <p class="products-section__text">Ресурс предлагает комплексные предложения с разным
                                         уровнем функционала и
