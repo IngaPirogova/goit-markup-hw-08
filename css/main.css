@@ -444,6 +444,13 @@ body {
             justify-content: start;
   }
 }
+@media screen and (max-width: 768px) and (min-width: 768px) {
+  .filter {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 
 .filter__button {
   display: inline-block;
@@ -876,6 +883,7 @@ body {
 
 .page-header {
   z-index: 10;
+  border-bottom: 1px solid #ECECEC;
 }
 
 .page-header__nav {
@@ -1238,11 +1246,11 @@ body {
   content: "";
   bottom: -1px;
   left: 0;
-  height: 4px;
+  min-height: 4px;
   width: 100%;
-  background-color: var(--accent-color);
+  background-color: #2196F3;
   border-radius: 2px;
-  color: blue;
+  opacity: 1;
 }
 
 .site-nav__item {
