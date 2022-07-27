@@ -6,7 +6,7 @@
     width: 40px;
     height: 40px;
     margin-left: auto; 
-    z-index: 1000;
+    z-index: 8;
     @extend %centeredFlex;    
 
     @media screen and (min-width: 768px) {
@@ -36,7 +36,7 @@
     flex-direction: column;
 
     background-color: $accent-text-color;
-    z-index: 100;
+    z-index: 7;
 
     transition: transform 500ms;
 

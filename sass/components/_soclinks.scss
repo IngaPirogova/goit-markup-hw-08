@@ -1,6 +1,12 @@
 .soclinks-list {
-    @extend %centeredFlex;
+  @extend %centeredFlex;
     @extend %ul;
+    
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 480px) {
+    padding-bottom: 24px;    
+}
 }
 
 .soclinks-list__link {
@@ -13,7 +19,6 @@
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
    
-
     &:hover,
     &:focus {
         background-color: $accent-color;
