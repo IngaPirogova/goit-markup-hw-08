@@ -8,7 +8,6 @@
     padding-bottom: 24px;    
 }
 }
-
 .soclinks-list__link {
     @extend %centeredFlex;
     width: 44px;
@@ -31,14 +30,10 @@
     background: rgba(255, 255, 255, 0.1);
     
 }
-
-
 .soclinks-list__icon {
     fill: currentColor;
     @extend %centeredFlex;
 }
-
-
 .soclinks-list__item:not(:last-child) {
     margin-right: 10px;
 }
